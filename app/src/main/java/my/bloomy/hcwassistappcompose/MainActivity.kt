@@ -12,6 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
+import my.bloomy.hcwassistappcompose.navigation.nav_graph.SetupNavGraph
 import my.bloomy.hcwassistappcompose.ui.theme.HCWAssistAppComposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -22,7 +23,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             HCWAssistAppComposeTheme {
                 navController = rememberNavController()
-//                SetupNavGraph(navController = navController)
+                SetupNavGraph(navController = navController)
             }
         }
     }
